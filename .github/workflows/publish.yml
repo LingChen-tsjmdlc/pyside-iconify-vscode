@@ -48,7 +48,9 @@ jobs:
           echo "vsix=$(ls *.vsix)" >> "$GITHUB_OUTPUT"
 
       - name: Publish to the VS Code Marketplace
-        run: npx @vscode/vsce@latest publish --oidc --no-dependencies
+        # --skip-duplicate: the same version is often published to both
+        # marketplaces in separate runs; the second run must not fail
+        run: npx @vscode/vsce@latest publish --oidc --no-dependencies --skip-duplicate
 
       - name: Publish to Open VSX
-        run: npx ovsx publish "${{ steps.package.outputs.vsix }}" --pat "${{ secrets.OVSX_PAT }}"
+        run: npx ovsx publish "${{ steps.package.outputs.vsix }}" --skip-duplicate --pat "${{ secrets.OVSX_PAT }}"
