@@ -59,7 +59,9 @@ suite('iconify/previews', () => {
 		);
 	});
 
-	test('a large set is split into several requests', async () => {
+	// 240 个原子写文件在 CI 的冷盘和杀软扫描下可能超过 mocha 默认的 2 秒
+	test('a large set is split into several requests', async function () {
+		this.timeout(15000);
 		const names = Array.from({ length: 120 }, (_, index) => `mdi:i-${index}`);
 		const { store: target, requests } = store();
 		assert.strictEqual((await run(target, names)).size, 120);
