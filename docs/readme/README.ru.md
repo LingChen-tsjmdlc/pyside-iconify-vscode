@@ -6,7 +6,7 @@
 
 > Этот проект **не** связан с проектом Iconify.
 >
-> Статус: ещё не опубликовано в VS Code Marketplace и Open VSX. Чтобы попробовать сейчас, запустите расширение из исходников; см. [CONTRIBUTING](../contributing/CONTRIBUTING.ru.md).
+> Доступно в [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify) и в [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify).
 
 ## Зачем
 

@@ -6,7 +6,7 @@
 
 > 本项目 **不是** Iconify 官方项目。
 >
-> 状态：尚未发布到 VS Code Marketplace 或 Open VSX。现在想试用，请从源码运行，见 [CONTRIBUTING](../contributing/CONTRIBUTING.zh-CN.md)。
+> 已发布到 [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify) 与 [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify)。
 
 ## 为什么需要它
 

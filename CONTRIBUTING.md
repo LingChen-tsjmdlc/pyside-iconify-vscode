@@ -6,12 +6,12 @@ English | [中文](docs/contributing/CONTRIBUTING.zh-CN.md) | [日本語](docs/c
 
 ## What you need
 
-| Tool                | Why                                           |
-| ------------------- | --------------------------------------------- |
-| Node.js 22 or newer | Runs the build, the linter and the tests      |
-| pnpm                | Package manager (`npm install -g pnpm`)       |
-| Git                 | Version control                               |
-| VS Code             | Runs and debugs the extension                 |
+| Tool                | Why                                      |
+| ------------------- | ---------------------------------------- |
+| Node.js 22 or newer | Runs the build, the linter and the tests |
+| pnpm                | Package manager (`npm install -g pnpm`)  |
+| Git                 | Version control                          |
+| VS Code             | Runs and debugs the extension            |
 
 You do not need to write Python to work on the extension, but a small Python file that uses `pyside-iconify` is handy for trying it.
 
@@ -58,13 +58,13 @@ The first `pnpm test` downloads a copy of VS Code into `.vscode-test/`, so it ne
 
 See [docs/architecture.md](docs/architecture.md) for the layers and the reasons behind them. The short version of "where does my change go":
 
-| Change touches                                         | Location       |
-| ------------------------------------------------------ | -------------- |
-| Reading calls in Python code, parameter rules, names   | `src/core/`    |
-| Requests to the Iconify API, caching                   | `src/iconify/` |
-| A VS Code feature: hover, completion, checks, search   | `src/features/`|
-| Registering features on start-up                       | `src/extension.ts` |
-| Text the user sees                                     | see Localization |
+| Change touches                                       | Location           |
+| ---------------------------------------------------- | ------------------ |
+| Reading calls in Python code, parameter rules, names | `src/core/`        |
+| Requests to the Iconify API, caching                 | `src/iconify/`     |
+| A VS Code feature: hover, completion, checks, search | `src/features/`    |
+| Registering features on start-up                     | `src/extension.ts` |
+| Text the user sees                                   | see Localization   |
 
 ## Localization
 

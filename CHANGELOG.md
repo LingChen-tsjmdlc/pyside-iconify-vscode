@@ -2,7 +2,7 @@
 
 All notable changes to this extension are documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/).
 
-## [Unreleased]
+## [1.0.0]
 
 ### Added
 

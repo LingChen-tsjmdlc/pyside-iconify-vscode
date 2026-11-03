@@ -6,7 +6,7 @@ Dokumentation, Autovervollständigung, Prüfungen und Icon-Suche für `pyside-ic
 
 > Dieses Projekt steht in **keiner** Verbindung zum Iconify-Projekt.
 >
-> Stand: Noch nicht im VS Code Marketplace und auf Open VSX veröffentlicht. Zum Ausprobieren starte die Erweiterung aus dem Quellcode; siehe [CONTRIBUTING](../contributing/CONTRIBUTING.de.md).
+> Verfügbar im [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify) und auf [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify).
 
 ## Warum
 

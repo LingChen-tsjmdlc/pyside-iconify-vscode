@@ -6,7 +6,7 @@
 
 > このプロジェクトは Iconify プロジェクトとは **無関係** です。
 >
-> 状態：VS Code Marketplace と Open VSX にはまだ公開していません。今すぐ試すにはソースから実行してください。[CONTRIBUTING](../contributing/CONTRIBUTING.ja.md) を参照してください。
+> [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify) と [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify) で公開中。
 
 ## なぜ必要か
 

@@ -6,7 +6,7 @@
 
 > 이 프로젝트는 Iconify 프로젝트와 **관련이 없습니다**.
 >
-> 상태: 아직 VS Code Marketplace와 Open VSX에 게시하지 않았습니다. 지금 써 보려면 소스에서 실행하세요. [CONTRIBUTING](../contributing/CONTRIBUTING.ko.md)을 참고하세요.
+> [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify)와 [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify)에서 이용 가능합니다.
 
 ## 왜 필요한가
 

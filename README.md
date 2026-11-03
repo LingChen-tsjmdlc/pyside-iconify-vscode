@@ -6,7 +6,7 @@ English | [中文](https://github.com/LingChen-tsjmdlc/pyside-iconify-vscode/blo
 
 > This project is **not** affiliated with the Iconify project.
 >
-> Status: not published to the VS Code Marketplace or Open VSX yet. To try it now, run it from source; see [CONTRIBUTING.md](https://github.com/LingChen-tsjmdlc/pyside-iconify-vscode/blob/main/CONTRIBUTING.md).
+> Available on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify) and [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify).
 
 ## Why
 

@@ -6,7 +6,7 @@ Documentación, autocompletado, comprobaciones y búsqueda de iconos para `pysid
 
 > Este proyecto **no** está afiliado al proyecto Iconify.
 >
-> Estado: todavía no está publicada en el VS Code Marketplace ni en Open VSX. Para probarla ahora, ejecútala desde el código fuente; consulta [CONTRIBUTING](../contributing/CONTRIBUTING.es.md).
+> Disponible en el [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify) y en [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify).
 
 ## Por qué
 

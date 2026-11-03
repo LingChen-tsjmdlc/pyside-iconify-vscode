@@ -6,7 +6,7 @@ Documentação, preenchimento automático, verificações e busca de ícones par
 
 > Este projeto **não** é afiliado ao projeto Iconify.
 >
-> Status: ainda não publicada no VS Code Marketplace nem no Open VSX. Para testar agora, execute-a a partir do código-fonte; veja [CONTRIBUTING](../contributing/CONTRIBUTING.pt-BR.md).
+> Disponível no [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=lingchen.pyside-iconify) e no [Open VSX](https://open-vsx.org/extension/lingchen/pyside-iconify).
 
 ## Por que
 
