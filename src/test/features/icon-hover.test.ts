@@ -30,7 +30,7 @@ suite('icon-hover', () => {
 		await fs.promises.rm(directory, { recursive: true, force: true });
 	});
 
-	function provider(files: PreviewFiles | undefined = { light: file, dark: file }) {
+	function provider(files?: PreviewFiles) {
 		const asked: string[] = [];
 		const target = new IconHoverProvider(analyzer, {
 			get: async (name) => {
@@ -51,7 +51,7 @@ suite('icon-hover', () => {
 
 	test('shows the name and a large picture over the icon argument', async () => {
 		const { document, position } = await at('IconWidget("mdi:ho|me")\n');
-		const { target, asked } = provider();
+		const { target, asked } = provider({ light: file, dark: file });
 		const hover = await target.provideHover(document, position, live());
 		assert.ok(hover);
 		assert.deepStrictEqual(asked, ['mdi:home']);
@@ -63,7 +63,7 @@ suite('icon-hover', () => {
 	});
 
 	test('nothing over other strings, invalid names or outside strings', async () => {
-		const { target, asked } = provider();
+		const { target, asked } = provider({ light: file, dark: file });
 		for (const body of ['x = "mdi:ho|me"\n', 'IconWidget("ho|me")\n', 'IconWidget("mdi:home", color="re|d")\n', 'IconWidget(|)\n']) {
 			const { document, position } = await at(body);
 			assert.strictEqual(await target.provideHover(document, position, live()), undefined, body);
