@@ -1,0 +1,16 @@
+.vscode/**
+.vscode-test/**
+src/**
+.gitignore
+.npmrc
+.workbuddy/**
+docs/**
+examples/**
+HANDOFF.md
+CONTRIBUTING.md
+pnpm-lock.yaml
+**/tsconfig.json
+**/eslint.config.mjs
+**/*.map
+**/*.ts
+**/.vscode-test.*

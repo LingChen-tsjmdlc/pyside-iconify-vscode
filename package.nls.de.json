@@ -1,0 +1,11 @@
+{
+  "pyside-iconify.displayName": "PySide Iconify",
+  "pyside-iconify.description": "Dokumentation, Autovervollständigung, Prüfungen und Icon-Suche für pyside-iconify. Inoffiziell, ohne Verbindung zu Iconify.",
+  "pyside-iconify.searchIcons.title": "Icons suchen",
+  "pyside-iconify.inlineIcons.description": "Wie das echte Icon neben dem Icon-Namen im Argument `icon` von pyside-iconify-Aufrufen angezeigt wird. Die Zeile mit dem Cursor zeigt immer den Text, damit du ihn bearbeiten kannst.",
+  "pyside-iconify.inlineIcons.off": "Nur Text. Es wird kein Icon gezeichnet.",
+  "pyside-iconify.inlineIcons.iconBefore": "Icon, dann der Text.",
+  "pyside-iconify.inlineIcons.iconAfter": "Text, dann das Icon.",
+  "pyside-iconify.inlineIcons.iconOnly": "Nur das Icon. Der Icon-Name ist verborgen.",
+  "pyside-iconify.inlineIcons.gutter": "Icon im Rand vor der Zeilennummer. Der Text bleibt."
+}

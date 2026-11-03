@@ -1,0 +1,11 @@
+{
+  "pyside-iconify.displayName": "PySide Iconify",
+  "pyside-iconify.description": "为 pyside-iconify 提供文档、补全、检查和图标搜索。非官方项目，与 Iconify 无关。",
+  "pyside-iconify.searchIcons.title": "搜索图标",
+  "pyside-iconify.inlineIcons.description": "在 pyside-iconify 调用的 `icon` 参数里，图标名旁边如何显示真实图标。光标所在的行始终显示文字，方便编辑。",
+  "pyside-iconify.inlineIcons.off": "仅文字，不画图标。",
+  "pyside-iconify.inlineIcons.iconBefore": "先图标，后文字。",
+  "pyside-iconify.inlineIcons.iconAfter": "先文字，后图标。",
+  "pyside-iconify.inlineIcons.iconOnly": "仅图标，隐藏图标名。",
+  "pyside-iconify.inlineIcons.gutter": "图标显示在行号前的边栏里，文字保留。"
+}
