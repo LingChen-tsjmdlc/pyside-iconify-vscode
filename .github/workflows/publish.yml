@@ -1,0 +1,48 @@
+# Packaging and publishing, run by pushing a v* tag.
+# Marketplace authenticates with Trusted Publishing (OIDC, no stored token);
+# Open VSX still needs OVSX_PAT. Create the Marketplace policy with:
+#   Repository owner: LingChen-tsjmdlc
+#   Repository:       pyside-iconify-vscode
+#   Workflow:         publish.yml
+#   Environment:      release
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: macos-latest
+    environment: release
+    permissions:
+      contents: read
+      id-token: write # required for the Marketplace OIDC exchange
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4 # reads the packageManager field
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Compile and lint
+        run: pnpm run compile && pnpm run lint
+
+      - name: Test on the minimum and the stable VS Code
+        run: pnpm test
+
+      - name: Package
+        run: npx @vscode/vsce@latest package
+
+      - name: Publish to the VS Code Marketplace
+        run: npx @vscode/vsce@latest publish --oidc
+
+      - name: Publish to Open VSX
+        run: npx ovsx publish "*.vsix" --pat "${{ secrets.OVSX_PAT }}"

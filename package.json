@@ -1,8 +1,9 @@
 {
   "name": "pyside-iconify",
+  "publisher": "lingchen",
   "displayName": "%pyside-iconify.displayName%",
   "description": "%pyside-iconify.description%",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -10,7 +11,25 @@
     "Programming Languages",
     "Other"
   ],
+  "keywords": [
+    "pyside",
+    "pyqt",
+    "qt",
+    "iconify",
+    "icons",
+    "python"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LingChen-tsjmdlc/pyside-iconify-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/LingChen-tsjmdlc/pyside-iconify-vscode/issues"
+  },
+  "homepage": "https://github.com/LingChen-tsjmdlc/pyside-iconify-vscode#readme",
   "l10n": "./l10n",
+  "icon": "resources/pyside-iconify.png",
+  "packageManager": "pnpm@11.24.0",
   "activationEvents": [
     "onLanguage:python",
     "onCommand:pyside-iconify.searchIcons"
