@@ -1,11 +1,11 @@
 {
-  "pyside-iconify.displayName": "PySide Iconify",
-  "pyside-iconify.description": "Documentação, preenchimento automático, verificações e busca de ícones para o pyside-iconify. Não oficial, sem relação com o Iconify.",
-  "pyside-iconify.searchIcons.title": "Buscar ícones",
-  "pyside-iconify.inlineIcons.description": "Como mostrar o ícone real ao lado do nome do ícone no argumento `icon` das chamadas ao pyside-iconify. A linha onde está o cursor sempre mostra o texto para que você possa editá-lo.",
-  "pyside-iconify.inlineIcons.off": "Só texto. Nenhum ícone é desenhado.",
-  "pyside-iconify.inlineIcons.iconBefore": "O ícone e depois o texto.",
-  "pyside-iconify.inlineIcons.iconAfter": "O texto e depois o ícone.",
-  "pyside-iconify.inlineIcons.iconOnly": "Só o ícone. O nome do ícone fica oculto.",
-  "pyside-iconify.inlineIcons.gutter": "Ícone na margem, antes do número da linha. O texto permanece."
+  "pysideIconify.displayName": "PySide Iconify",
+  "pysideIconify.description": "Documentação, preenchimento automático, verificações e busca de ícones para o pyside-iconify. Não oficial, sem relação com o Iconify.",
+  "pysideIconify.searchIcons.title": "Buscar ícones",
+  "pysideIconify.inlineIcons.description": "Como mostrar o ícone real ao lado do nome do ícone no argumento `icon` das chamadas ao pyside-iconify. A linha onde está o cursor sempre mostra o texto para que você possa editá-lo.",
+  "pysideIconify.inlineIcons.off": "Só texto. Nenhum ícone é desenhado.",
+  "pysideIconify.inlineIcons.iconBefore": "O ícone e depois o texto.",
+  "pysideIconify.inlineIcons.iconAfter": "O texto e depois o ícone.",
+  "pysideIconify.inlineIcons.iconOnly": "Só o ícone. O nome do ícone fica oculto.",
+  "pysideIconify.inlineIcons.gutter": "Ícone na margem, antes do número da linha. O texto permanece."
 }

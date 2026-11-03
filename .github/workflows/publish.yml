@@ -39,12 +39,15 @@ jobs:
         run: pnpm test
 
       - name: Package
+        id: package
         # pnpm correctly skips devDependencies of dependencies, but vsce
         # validates the tree with npm and fails on them; skip its check
-        run: npx @vscode/vsce@latest package --no-dependencies
+        run: |
+          npx @vsce/vsce@latest package --no-dependencies
+          echo "vsix=$(ls *.vsix)" >> "$GITHUB_OUTPUT"
 
       - name: Publish to the VS Code Marketplace
         run: npx @vscode/vsce@latest publish --oidc --no-dependencies
 
       - name: Publish to Open VSX
-        run: npx ovsx publish "*.vsix" --pat "${{ secrets.OVSX_PAT }}"
+        run: npx ovsx publish "${{ steps.package.outputs.vsix }}" --pat "${{ secrets.OVSX_PAT }}"

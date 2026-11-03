@@ -1,9 +1,9 @@
 {
   "name": "pyside-iconify",
   "publisher": "lingchen",
-  "displayName": "%pyside-iconify.displayName%",
-  "description": "%pyside-iconify.description%",
-  "version": "1.0.0",
+  "displayName": "%pysideIconify.displayName%",
+  "description": "%pysideIconify.description%",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -39,7 +39,7 @@
     "commands": [
       {
         "command": "pyside-iconify.searchIcons",
-        "title": "%pyside-iconify.searchIcons.title%",
+        "title": "%pysideIconify.searchIcons.title%",
         "category": "PySide Iconify"
       }
     ],
@@ -57,13 +57,13 @@
             "gutter"
           ],
           "enumDescriptions": [
-            "%pyside-iconify.inlineIcons.off%",
-            "%pyside-iconify.inlineIcons.iconBefore%",
-            "%pyside-iconify.inlineIcons.iconAfter%",
-            "%pyside-iconify.inlineIcons.iconOnly%",
-            "%pyside-iconify.inlineIcons.gutter%"
+            "%pysideIconify.inlineIcons.off%",
+            "%pysideIconify.inlineIcons.iconBefore%",
+            "%pysideIconify.inlineIcons.iconAfter%",
+            "%pysideIconify.inlineIcons.iconOnly%",
+            "%pysideIconify.inlineIcons.gutter%"
           ],
-          "markdownDescription": "%pyside-iconify.inlineIcons.description%"
+          "markdownDescription": "%pysideIconify.inlineIcons.description%"
         }
       }
     },

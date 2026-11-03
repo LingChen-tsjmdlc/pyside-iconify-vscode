@@ -1,11 +1,11 @@
 {
-  "pyside-iconify.displayName": "PySide Iconify",
-  "pyside-iconify.description": "pyside-iconify のドキュメント、補完、チェック、アイコン検索。非公式で、Iconify とは無関係です。",
-  "pyside-iconify.searchIcons.title": "アイコンを検索",
-  "pyside-iconify.inlineIcons.description": "pyside-iconify の呼び出しの `icon` 引数で、アイコン名の横に実際のアイコンをどう表示するか。カーソルがある行は、編集できるよう常に文字を表示します。",
-  "pyside-iconify.inlineIcons.off": "文字のみ。アイコンは描画しません。",
-  "pyside-iconify.inlineIcons.iconBefore": "アイコン、続いて文字。",
-  "pyside-iconify.inlineIcons.iconAfter": "文字、続いてアイコン。",
-  "pyside-iconify.inlineIcons.iconOnly": "アイコンのみ。アイコン名は隠します。",
-  "pyside-iconify.inlineIcons.gutter": "行番号の前のガターにアイコンを表示。文字は残ります。"
+  "pysideIconify.displayName": "PySide Iconify",
+  "pysideIconify.description": "pyside-iconify のドキュメント、補完、チェック、アイコン検索。非公式で、Iconify とは無関係です。",
+  "pysideIconify.searchIcons.title": "アイコンを検索",
+  "pysideIconify.inlineIcons.description": "pyside-iconify の呼び出しの `icon` 引数で、アイコン名の横に実際のアイコンをどう表示するか。カーソルがある行は、編集できるよう常に文字を表示します。",
+  "pysideIconify.inlineIcons.off": "文字のみ。アイコンは描画しません。",
+  "pysideIconify.inlineIcons.iconBefore": "アイコン、続いて文字。",
+  "pysideIconify.inlineIcons.iconAfter": "文字、続いてアイコン。",
+  "pysideIconify.inlineIcons.iconOnly": "アイコンのみ。アイコン名は隠します。",
+  "pysideIconify.inlineIcons.gutter": "行番号の前のガターにアイコンを表示。文字は残ります。"
 }

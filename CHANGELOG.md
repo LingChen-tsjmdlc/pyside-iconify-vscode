@@ -2,6 +2,13 @@
 
 All notable changes to this extension are documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.0.1]
+
+### Fixed
+
+- The Marketplace listing now shows the real display name and description; in 1.0.0 they appeared as raw `%key%` references because the manifest translation keys contained hyphens, which the packaging tool cannot resolve
+- Continuous integration now passes the packaged `.vsix` file to Open VSX correctly, so both marketplaces receive every release
+
 ## [1.0.0]
 
 ### Added

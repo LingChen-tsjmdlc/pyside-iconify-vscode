@@ -1,11 +1,11 @@
 {
-  "pyside-iconify.displayName": "PySide Iconify",
-  "pyside-iconify.description": "Документация, автодополнение, проверки и поиск иконок для pyside-iconify. Неофициальное расширение, не связано с Iconify.",
-  "pyside-iconify.searchIcons.title": "Поиск иконок",
-  "pyside-iconify.inlineIcons.description": "Как показывать настоящую иконку рядом с именем иконки в аргументе `icon` вызовов pyside-iconify. Строка с курсором всегда показывает текст, чтобы его можно было править.",
-  "pyside-iconify.inlineIcons.off": "Только текст. Иконка не рисуется.",
-  "pyside-iconify.inlineIcons.iconBefore": "Иконка, затем текст.",
-  "pyside-iconify.inlineIcons.iconAfter": "Текст, затем иконка.",
-  "pyside-iconify.inlineIcons.iconOnly": "Только иконка. Имя иконки скрыто.",
-  "pyside-iconify.inlineIcons.gutter": "Иконка на полях, перед номером строки. Текст остаётся."
+  "pysideIconify.displayName": "PySide Iconify",
+  "pysideIconify.description": "Документация, автодополнение, проверки и поиск иконок для pyside-iconify. Неофициальное расширение, не связано с Iconify.",
+  "pysideIconify.searchIcons.title": "Поиск иконок",
+  "pysideIconify.inlineIcons.description": "Как показывать настоящую иконку рядом с именем иконки в аргументе `icon` вызовов pyside-iconify. Строка с курсором всегда показывает текст, чтобы его можно было править.",
+  "pysideIconify.inlineIcons.off": "Только текст. Иконка не рисуется.",
+  "pysideIconify.inlineIcons.iconBefore": "Иконка, затем текст.",
+  "pysideIconify.inlineIcons.iconAfter": "Текст, затем иконка.",
+  "pysideIconify.inlineIcons.iconOnly": "Только иконка. Имя иконки скрыто.",
+  "pysideIconify.inlineIcons.gutter": "Иконка на полях, перед номером строки. Текст остаётся."
 }

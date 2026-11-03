@@ -1,11 +1,11 @@
 {
-  "pyside-iconify.displayName": "PySide Iconify",
-  "pyside-iconify.description": "Documentation, completion, checks and icon search for pyside-iconify. Unofficial, not affiliated with Iconify.",
-  "pyside-iconify.searchIcons.title": "Search Icons",
-  "pyside-iconify.inlineIcons.description": "How to show the real icon next to an icon name in the `icon` argument of pyside-iconify calls. The line with the cursor always shows the text so you can edit it.",
-  "pyside-iconify.inlineIcons.off": "Text only. No icon is drawn.",
-  "pyside-iconify.inlineIcons.iconBefore": "Icon, then the text.",
-  "pyside-iconify.inlineIcons.iconAfter": "Text, then the icon.",
-  "pyside-iconify.inlineIcons.iconOnly": "Icon only. The icon name is hidden.",
-  "pyside-iconify.inlineIcons.gutter": "Icon in the gutter, before the line number. The text stays."
+  "pysideIconify.displayName": "PySide Iconify",
+  "pysideIconify.description": "Documentation, completion, checks and icon search for pyside-iconify. Unofficial, not affiliated with Iconify.",
+  "pysideIconify.searchIcons.title": "Search Icons",
+  "pysideIconify.inlineIcons.description": "How to show the real icon next to an icon name in the `icon` argument of pyside-iconify calls. The line with the cursor always shows the text so you can edit it.",
+  "pysideIconify.inlineIcons.off": "Text only. No icon is drawn.",
+  "pysideIconify.inlineIcons.iconBefore": "Icon, then the text.",
+  "pysideIconify.inlineIcons.iconAfter": "Text, then the icon.",
+  "pysideIconify.inlineIcons.iconOnly": "Icon only. The icon name is hidden.",
+  "pysideIconify.inlineIcons.gutter": "Icon in the gutter, before the line number. The text stays."
 }
