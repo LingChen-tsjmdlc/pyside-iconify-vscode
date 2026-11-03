@@ -14,7 +14,7 @@ on:
 
 jobs:
   publish:
-    runs-on: macos-latest
+    runs-on: windows-latest
     environment: release
     permissions:
       contents: read
@@ -40,10 +40,11 @@ jobs:
 
       - name: Package
         id: package
+        shell: bash # bash syntax below; the Windows default shell is pwsh
         # pnpm correctly skips devDependencies of dependencies, but vsce
         # validates the tree with npm and fails on them; skip its check
         run: |
-          npx @vsce/vsce@latest package --no-dependencies
+          npx @vscode/vsce@latest package --no-dependencies
           echo "vsix=$(ls *.vsix)" >> "$GITHUB_OUTPUT"
 
       - name: Publish to the VS Code Marketplace
