@@ -1,4 +1,5 @@
 import { Language, Parser, type Node, type Tree } from 'web-tree-sitter';
+import * as path from 'path';
 import { extractCalls } from './calls';
 import { findParam } from './rules';
 import type { IconCall, Range, StringTarget, TargetName } from './types';
@@ -33,9 +34,15 @@ export class PythonAnalyzer {
 	private constructor(private readonly parser: Parser) {}
 
 	/** 加载 WASM 版的 tree-sitter 与 Python 语法；整个扩展只需要创建一次。 */
-	static async create(): Promise<PythonAnalyzer> {
-		await Parser.init({ locateFile: (name: string) => require.resolve(`web-tree-sitter/${name}`) });
-		const language = await Language.load(require.resolve('tree-sitter-python/tree-sitter-python.wasm'));
+	static async create(wasmDirectory?: string): Promise<PythonAnalyzer> {
+		const runtime = wasmDirectory
+			? path.join(wasmDirectory, 'web-tree-sitter.wasm')
+			: require.resolve('web-tree-sitter/web-tree-sitter.wasm');
+		const grammar = wasmDirectory
+			? path.join(wasmDirectory, 'tree-sitter-python.wasm')
+			: require.resolve('tree-sitter-python/tree-sitter-python.wasm');
+		await Parser.init({ locateFile: () => runtime });
+		const language = await Language.load(grammar);
 		const parser = new Parser();
 		parser.setLanguage(language);
 		return new PythonAnalyzer(parser);

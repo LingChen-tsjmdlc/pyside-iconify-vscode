@@ -10,7 +10,7 @@ name: Publish
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   publish:
@@ -40,17 +40,20 @@ jobs:
 
       - name: Package
         id: package
-        shell: bash # bash syntax below; the Windows default shell is pwsh
-        # pnpm correctly skips devDependencies of dependencies, but vsce
-        # validates the tree with npm and fails on them; skip its check
+        shell: bash
+        # bash syntax below; the Windows default shell is pwsh
+        # Runtime JavaScript is bundled; WASM files are copied by compile.
         run: |
           npx @vscode/vsce@latest package --no-dependencies
           echo "vsix=$(ls *.vsix)" >> "$GITHUB_OUTPUT"
 
+      - name: Verify the packaged extension without development dependencies
+        run: pnpm run verify:vsix "${{ steps.package.outputs.vsix }}"
+
       - name: Publish to the VS Code Marketplace
         # --skip-duplicate: the same version is often published to both
         # marketplaces in separate runs; the second run must not fail
-        run: npx @vscode/vsce@latest publish --oidc --no-dependencies --skip-duplicate
+        run: npx @vscode/vsce@latest publish --packagePath "${{ steps.package.outputs.vsix }}" --oidc --skip-duplicate
 
       - name: Publish to Open VSX
         run: npx ovsx publish "${{ steps.package.outputs.vsix }}" --skip-duplicate --pat "${{ secrets.OVSX_PAT }}"

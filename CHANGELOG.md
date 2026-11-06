@@ -2,6 +2,20 @@
 
 All notable changes to this extension are documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.0.3]
+
+### Fixed
+
+- Hotfix for Marketplace activation failures: ship a self-contained parser bundle with both WASM resources, restoring completion, hover documentation, diagnostics and icon search.
+- Check the final VSIX in isolated VS Code instances and publish that same verified artifact to both marketplaces.
+
+## [1.0.2]
+
+### Fixed
+
+- Bundle the parser runtime and both WASM files in the extension package. Marketplace installations can now activate and register parameter completion, hover documentation, diagnostics, icon completion and the icon search command.
+- Verify the packaged VSIX in an isolated VS Code instance before publishing to either marketplace.
+
 ## [1.0.1]
 
 ### Fixed

@@ -1,3 +1,4 @@
 allowBuilds:
+  esbuild: true
   # 只用包内自带的 .wasm，不需要 node-gyp-build 编译原生模块
   tree-sitter-python: false

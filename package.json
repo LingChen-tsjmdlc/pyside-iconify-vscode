@@ -3,7 +3,7 @@
   "publisher": "lingchen",
   "displayName": "%pysideIconify.displayName%",
   "description": "%pysideIconify.description%",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -84,25 +84,28 @@
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
-    "compile": "tsc -p ./",
+    "compile": "tsc -p ./ && node esbuild.mjs",
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "verify:vsix": "node scripts/verify-vsix.mjs"
   },
   "dependencies": {
     "tree-sitter-python": "0.25.0",
     "web-tree-sitter": "0.27.1"
   },
   "devDependencies": {
-    "@types/vscode": "~1.73.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "24.x",
-    "typescript-eslint": "^8.61.1",
-    "eslint": "^10.5.0",
-    "typescript": "^6.0.3",
+    "@types/vscode": "~1.73.0",
     "@vscode/test-cli": "^0.0.15",
-    "@vscode/test-electron": "^3.0.0"
+    "@vscode/test-electron": "^3.0.0",
+    "esbuild": "0.28.2",
+    "eslint": "^10.5.0",
+    "jszip": "3.10.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1"
   },
   "overrides": {
     "diff": "^8.0.4",

@@ -36,7 +36,7 @@ export function activate(context: vscode.ExtensionContext): void {
 	});
 
 	const parsing = stopwatch();
-	const analyzer = PythonAnalyzer.create();
+	const analyzer = PythonAnalyzer.create(context.asAbsolutePath('out'));
 	analyzer.then(
 		() => log.info('parser-ready', { ms: parsing() }),
 		(error: unknown) => {

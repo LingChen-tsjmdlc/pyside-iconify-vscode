@@ -4,6 +4,9 @@ src/**
 .gitignore
 .npmrc
 .workbuddy/**
+scripts/**
+esbuild.mjs
+pnpm-workspace.yaml
 docs/**
 examples/**
 HANDOFF.md
@@ -14,3 +17,8 @@ pnpm-lock.yaml
 **/*.map
 **/*.ts
 **/.vscode-test.*
+out/**
+!out/extension.js
+!out/web-tree-sitter.wasm
+!out/tree-sitter-python.wasm
+!out/THIRD_PARTY_NOTICES.txt
